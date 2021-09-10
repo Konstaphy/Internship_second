@@ -1,26 +1,47 @@
 const path = require('path')
-const miniCss = require('mini-css-extract-plugin');
+const htmlWPP = require('html-webpack-plugin')
 
 module.exports = {
-    entry: {main: './src/start.js'},
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+    entry: {
+        main: './src/start.js',
+        index: './public/app.pug'
     },
-    mode: 'development',
+    output: {
+        filename: "[name].[contenthash].js",
+        path: path.resolve(__dirname, 'build')
+    },
+    mode: 'production',
     module: {
-        rules: [{
-            test:/\.(s*)css$/,
+        rules: [
+            {
+            test:/\.scss$/,
             use: [
-                miniCss.loader,
+                'style-loader',
                 'css-loader',
                 'sass-loader',
             ]
-        }]
+        }, //scss
+            {
+                test: /\.pug$/,
+                use: [
+                    {loader: "html-loader"},
+                    {loader: "pug-html-loader", options: {"pretty": true}}
+                ]
+            }  //pug
+            ]
     },
     plugins: [
-        new miniCss({
-            filename: 'style.css',
-        }),
-    ]
+        new htmlWPP({
+            filename: "index.html",
+            template: path.join(__dirname, 'public/app.pug'),
+        })
+    ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'build'),
+        },
+        compress: true,
+        port: 9000,
+    },
+    stats: 'errors-only',
 }
