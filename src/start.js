@@ -1,5 +1,5 @@
-import './components/header/header__body.scss'
-import './components/header/styles.scss'
-import './components/header/header__navigation.scss'
+import './header/header__body.scss'
+import './header/styles.scss'
+import './header/header__navigation.scss'
 
-// console.log("Hello")
+console.log("Hello")
