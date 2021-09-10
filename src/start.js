@@ -1,5 +1,3 @@
-import './header/header__body.scss'
-import './header/styles.scss'
-import './header/header__navigation.scss'
+import './styles.scss'
 
 console.log("Hello")
