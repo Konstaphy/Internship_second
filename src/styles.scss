@@ -37,4 +37,13 @@ html, body {
 .wrapper{
   max-width: 1160px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
+
+.content{
+  flex: 2 0 auto;
+}
+
+
