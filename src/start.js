@@ -1,3 +1,7 @@
+//styles
 import './styles.scss'
 
-console.log("Hello")
+//js
+// components
+import './components/header/header'
+

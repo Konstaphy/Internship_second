@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Montserrat";
   src: url("assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf"),
-    url("assets/fonts/Montserrat/Montserrat-Regular.svg") format("svg"),
     url("assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -10,15 +9,21 @@
 @font-face {
   font-family: "Montserrat";
   src: url("assets/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf"),
-  url("assets/fonts/Montserrat/Montserrat-Bold.svg") format("svg"),
   url("assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
+:root {
+  --main-color-10: rgba(31, 32, 65, 0.1);
+  --main-color-75: rgba(31, 32, 65, 0.75);
+  --main-color-50: rgba(31, 32, 65, 0.5);
+}
+
 * {
   margin: 0;
   font-family: Montserrat, serif;
+  color: var(--main-color-75);
   padding: 0;
   box-sizing: border-box;
 }

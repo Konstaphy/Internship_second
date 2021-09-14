@@ -1,0 +1,30 @@
+.header{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  .header__image-box{
+    vertical-align: center;
+    display: grid;
+    .header__image{
+      margin: auto;
+      height: 40px;
+    }
+  }
+  .header__right-side{
+    display: flex;
+    justify-content: flex-end;
+    .header__links{
+      list-style: none;
+      display: flex;
+      .header__links-item{
+        margin: auto 10px;
+        font-size: 14px;
+        color: var(--main-color-50);
+        &.active{
+          color: var(--main-color-75);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
