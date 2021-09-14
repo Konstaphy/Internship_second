@@ -14,16 +14,23 @@
   font-style: normal;
 }
 
+:root {
+  --main-color-10: rgba(31, 32, 65, 0.1);
+  --main-color-75: rgba(31, 32, 65, 0.75);
+  --main-color-50: rgba(31, 32, 65, 0.5);
+}
+
 * {
   margin: 0;
   font-family: Montserrat, serif;
+  color: var(--main-color-75);
   padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 
 .wrapper{

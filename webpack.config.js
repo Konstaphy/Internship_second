@@ -6,7 +6,8 @@ module.exports = {
     ,
     output: {
         filename: "index.[contenthash].js",
-        path: path.resolve(__dirname, 'build')
+        path: path.resolve(__dirname, 'build'),
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
     mode: "production",
     module: {
@@ -26,6 +27,13 @@ module.exports = {
                 {loader: "pug-html-loader", options: {"pretty": true}}
             ]
         },  //pug
+        {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: 'asset/resource',
+            generator: {
+                filename: 'static/[hash][ext][query]'
+            }
+        },
         ]
     },
     plugins: [

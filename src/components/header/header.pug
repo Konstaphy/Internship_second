@@ -1,0 +1,16 @@
+//- includes ../../public/app.pug
+
+header.header.wrapper
+    .header__image-box
+        img(src='../src/assets/images/Logo.svg').header__image
+    .header__right-side
+        ul.header__links
+            li.header__links-item.active О нас
+            li.header__links-item Услуги
+            li.header__links-item.header-link_extractable Вакансии
+            li.header__links-item Новости
+            li.header__links-item.header-link_extractable Соглашения
+        //if registered === true
+        include ./header__registered/header__registered
+        //else
+        //include ./header__unregistered/header__unregistered
