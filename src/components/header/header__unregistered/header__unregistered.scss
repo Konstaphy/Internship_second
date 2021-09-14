@@ -1,0 +1,27 @@
+@mixin button {
+  margin: auto 10px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  outline: none;
+  background:
+          linear-gradient(to bottom, #BC9CFF,#8BA4F9) padding-box,
+          linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+  border: 2px solid transparent;
+  display:inline-block;
+  color: #BC9CFF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.profile{
+  .log-in {
+    @include button;
+    background:
+            linear-gradient(#fff,#fff) padding-box,
+            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+  }
+  .sign-up{
+    @include button;
+    color: #fff;
+  }
+}
