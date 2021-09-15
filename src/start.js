@@ -5,4 +5,5 @@ import './styles.scss'
 // components
 import './components/header/header'
 import './components/footer/footer'
-
+import './components/auth/login/login'
+import './components/auth/register/register'
