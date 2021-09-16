@@ -1,15 +1,21 @@
 .reg-box
-    .reg-box__title Регистрация аккаунта
-    form.reg-box__login-form
-        input.reg-box__name
-        input.reg-box__surname
-        .reg-box__sex
-            .reg-box__male
-            .reg-box__female
-        .reg-box__date-of-birth
-        .reg-box__data
+    h1.reg-box__title Регистрация аккаунта
+    form.reg-box__reg-form
+        .reg-box__personal
             input.reg-box__name
             input.reg-box__surname
-            input.reg-box__get-mails-radio
+            .reg-box__sex
+                .reg-box__male
+                .reg-box__female
+        .reg-box__date-of-birth
+            h3.reg-box__dob-title ДАТА РОЖДЕНИЯ
+            input(type='date').reg-box__dob-choice
+        .reg-box__data
+            h3.reg-box__data-title ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+            input.reg-box__name
+            input.reg-box__surname
+            label.reg-box__get-mails
+                input(type='checkbox').reg-box__get-mails-checkbox
+                span.reg-box__slider
     button.reg-box__sign-up
     .reg-box__have-account
