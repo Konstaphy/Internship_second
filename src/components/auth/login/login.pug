@@ -1,7 +1,9 @@
 .login-box
-    .login-box__title Войти
+    h1.login-box__title Войти
     form.login-box__login-form
-        input.login-box__email
-        input.login-box__password
-    button.login-box__sign-in
+        input.login-box__email(placeholder='Email', type='email')
+        input.login-box__password(placeholder='Password', type='password')
+    button.login-box__sign-in Войти
     .login-box__no-account
+        p Нет аккаунта на Toxin?
+        button.login-box__create-acc Создать

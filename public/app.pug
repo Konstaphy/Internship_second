@@ -7,8 +7,9 @@ html
         meta(name='keywords', content='Hotels, Internship')
         title='Main page'
     body
-        .wrapper
-            include ../src/components/header/header
-            h2.content This is content
-            include ../src/components/footer/footer
+
+        include ../src/components/header/header
+        .content
+            include ../src/components/auth/login/login
+        include ../src/components/footer/footer
 

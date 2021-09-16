@@ -1,0 +1,76 @@
+.login-box{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 380px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  .login-box__title{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .login-box__login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 10px;
+    .login-box__email{
+      padding: 12px 15px;
+      border: solid 1px var(--main-color-25);
+      color: var(--main-color-50);
+      border-radius: 5px;
+      outline: none;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .login-box__password {
+      padding: 12px 15px;
+      border-radius: 5px;
+      border: solid 1px var(--main-color-25);
+      color: var(--main-color-50);
+      outline: none;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .login-box__sign-in{
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 22px;
+    outline: none;
+    background:
+            linear-gradient(to bottom, #BC9CFF,#8BA4F9) padding-box,
+            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+    border: 2px solid transparent;
+    display:inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .login-box__no-account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 2px 0;
+    p{
+      color: var(--main-color-100);
+      font-size: 14px;
+    }
+    .login-box__create-acc{
+      margin: 10px 0;
+      padding: 10px 20px;
+      border-radius: 22px;
+      outline: none;
+      background:
+              linear-gradient(#fff,#fff) padding-box,
+              linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+      border: 2px solid transparent;
+      display:inline-block;
+      color: #BC9CFF;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}
