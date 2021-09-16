@@ -1,0 +1,21 @@
+@import './src/components/button';
+
+.reg-box{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 380px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  .reg-box__title{
+    margin: 10px 0;
+  }
+  .reg-box__reg-form{
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+    flex-direction: column;
+
+  }
+}
