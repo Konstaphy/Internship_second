@@ -1,5 +1,16 @@
 @import './src/components/button';
 
+@mixin text-field {
+  padding: 12px 15px;
+  border: solid 1px var(--main-color-25);
+  color: var(--main-color-50);
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+}
+
 .reg-box{
   display: flex;
   flex-direction: column;
@@ -12,10 +23,48 @@
     margin: 10px 0;
   }
   .reg-box__reg-form{
+
     display: flex;
     margin: 10px 0;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
-
+    .reg-box__personal{
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      .reg-box__name,
+      .reg-box__surname{
+        @include text-field;
+      }
+      .reg-box-sex{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+    .reg-box__date-of-birth{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .reg-box__dob-choice{
+        @include text-field;
+      }
+    }
+    .reg-box__data{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .reg-box__email, .reg-box__password{
+        @include text-field;
+      }
+    }
+    .reg-box__get-mails{
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .reg-box__sign-up{
+    @include button;
+    color: white;
   }
 }

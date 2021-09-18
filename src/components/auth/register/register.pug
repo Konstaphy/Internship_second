@@ -2,20 +2,25 @@
     h1.reg-box__title Регистрация аккаунта
     form.reg-box__reg-form
         .reg-box__personal
-            input.reg-box__name
-            input.reg-box__surname
-            .reg-box__sex
-                .reg-box__male
-                .reg-box__female
+            input(placeholder='Имя').reg-box__name
+            input(placeholder='Фамилия').reg-box__surname
+            .reg-box-sex
+                .reg-box-sex__male
+                    input(type='radio', id='sexChoice1', value='male', name='sex').reg-box-sex__male-radio
+                    label(for='sexChoice1') Male
+                .reg-box-sex__female
+                    input(type='radio', id='sexChoice2', value='female', name='sex').reg-box-sex__male-radio
+                    label(for='sexChoice2') Female
         .reg-box__date-of-birth
             h3.reg-box__dob-title ДАТА РОЖДЕНИЯ
-            input(type='date').reg-box__dob-choice
+            input(type='date', placeholder='ДД/ММ/ГГГГ').reg-box__dob-choice
         .reg-box__data
             h3.reg-box__data-title ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-            input.reg-box__name
-            input.reg-box__surname
+            input(placeholder='Email').reg-box__email
+            input(placeholder='Пароль').reg-box__password
             label.reg-box__get-mails
                 input(type='checkbox').reg-box__get-mails-checkbox
                 span.reg-box__slider
-    button.reg-box__sign-up
+                p Получать спецпредложения
+    button.reg-box__sign-up Перейти к оплате
     .reg-box__have-account

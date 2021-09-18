@@ -1,5 +1,6 @@
 //styles
 import './styles.scss'
+import 'material-icons/iconfont/material-icons.css';
 
 //js
 // components

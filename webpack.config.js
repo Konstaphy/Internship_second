@@ -19,6 +19,13 @@ module.exports = {
                 'css-loader',
                 'sass-loader',
             ]
+        },
+        {
+            test:/\.css$/,
+            use: [
+                'style-loader',
+                'css-loader'
+            ]
         }, //scss
         {
             test: /\.pug$/,
@@ -49,4 +56,7 @@ module.exports = {
         port: 3000,
     },
     stats: 'errors-only',
+    performance: {
+        hints: false
+    },
 }
