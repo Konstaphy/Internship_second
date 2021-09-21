@@ -5,12 +5,12 @@
             input(placeholder='Имя').reg-box__name
             input(placeholder='Фамилия').reg-box__surname
             .reg-box-sex
-                .reg-box-sex__male
+                label(for='sexChoice1').reg-box-sex__male
                     input(type='radio', id='sexChoice1', value='male', name='sex').reg-box-sex__male-radio
-                    label(for='sexChoice1') Male
-                .reg-box-sex__female
+                    span Мужчина
+                label(for='sexChoice2').reg-box-sex__female
                     input(type='radio', id='sexChoice2', value='female', name='sex').reg-box-sex__male-radio
-                    label(for='sexChoice2') Female
+                    span Женщина
         .reg-box__date-of-birth
             h3.reg-box__dob-title ДАТА РОЖДЕНИЯ
             input(type='date', placeholder='ДД/ММ/ГГГГ').reg-box__dob-choice
@@ -22,5 +22,9 @@
                 input(type='checkbox').reg-box__get-mails-checkbox
                 span.reg-box__slider
                 p Получать спецпредложения
-    button.reg-box__sign-up Перейти к оплате
+    button.reg-box__sign-up
+        p ПЕРЕЙТИ К ОПЛАТЕ
+        span.reg-box__arrow.material-icons arrow_forward
     .reg-box__have-account
+        p Уже есть аккаунт на Toxin?
+        button.reg-box__sign-in ВОЙТИ
