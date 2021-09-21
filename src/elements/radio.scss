@@ -1,0 +1,27 @@
+@mixin radioContainer {
+  position: relative;
+  padding-left: 19px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ddd;
+    border-radius: 100%;
+  }
+  &:hover ~ input:checked span{
+    background-color: #ccc;
+  }
+  & input:checked ~ span {
+     background-color: #bbb;
+  }
+}
