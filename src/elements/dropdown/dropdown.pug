@@ -1,10 +1,12 @@
-.dropdown
-    .dropdown__title Hello world
-        span.material-icons.title__arrow expand_more
-    .dropdown__menu
-        ul.dropdown__options
-            li.dropdown__option What
-            li.dropdown__option Do
-            li.dropdown__option You
-            li.dropdown__option Need
-        button Submit
+
+
+mixin dropdown(title, options)
+    .dropdown
+        .dropdown__title
+            p= title
+            span.material-icons.title__arrow expand_more
+        .dropdown__menu
+            ul.dropdown__options
+                each item in options
+                    li.dropdown__option= item
+            button.dropdown__submit Submit

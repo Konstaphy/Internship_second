@@ -22,6 +22,7 @@
   --main-color-75: rgba(31, 32, 65, 0.75);
   --main-color-100: rgba(31, 32, 65, 1);
   --main-color-50: rgba(31, 32, 65, 0.5);
+  --main-purple: #BC9CFF;
 }
 
 ::placeholder{
@@ -54,10 +55,8 @@ html, body {
   align-items: center;
   height: 684px;
   width: 100%;
-
-  background-image: url(#);
-
-  background-position: center;
+  background-image: url('./assets/images/backgroundSignIn.jpg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
