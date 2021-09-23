@@ -1,4 +1,4 @@
-@mixin button {
+.styled-button.full {
   margin: auto 10px;
   padding: 10px 20px;
   border-radius: 22px;
@@ -8,7 +8,15 @@
           linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
   border: 2px solid transparent;
   display:inline-block;
-  color: #BC9CFF;
+  color: white;
   font-weight: bold;
   font-size: 12px;
+}
+
+.styled-button.white{
+  @extend .styled-button.full;
+  background:
+          linear-gradient(#fff,#fff) padding-box,
+          linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+  color: #BC9CFF;
 }

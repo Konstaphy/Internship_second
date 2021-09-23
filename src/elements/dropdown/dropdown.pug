@@ -1,4 +1,4 @@
-
+include ../button/button
 
 mixin dropdown(title, options)
     .dropdown
@@ -9,4 +9,4 @@ mixin dropdown(title, options)
             ul.dropdown__options
                 each item in options
                     li.dropdown__option= item
-            button.dropdown__submit Submit
+            +button('white', 'Подтвердить')

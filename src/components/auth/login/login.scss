@@ -1,4 +1,3 @@
-@import './src/elements/button';
 
 .login-box{
   display: flex;
@@ -37,28 +36,7 @@
       line-height: 24px;
     }
   }
-  .login-box__sign-in{
-    position: relative;
-    @include button;
-    padding: 0;
-    p{
-      color: white;
-      font-size: 12px;
 
-      margin: 14px auto 15px auto;
-    }
-    .login-box__arrow{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      color: white;
-      right: 18px;
-      line-height: 24px;
-      height: 24px;
-      margin: auto;
-    }
-    margin: 10px 0;
-  }
 
   .login-box__no-account{
     display: flex;
@@ -69,16 +47,6 @@
       color: var(--main-color-100);
       font-size: 14px;
     }
-    .login-box__create-acc{
-      @include button;
-      margin: 0;
-      background:
-              linear-gradient( #ffffff, #ffffff) padding-box,
-              linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
-      p {
-        color: #BC9CFF;
-      }
-      
-    }
+
   }
 }

@@ -1,3 +1,5 @@
+include ../../../../src/elements/button/button
+
 .login-box
     h1.login-box__title Войти
     form.login-box__login-form
@@ -8,5 +10,4 @@
         span.login-box__arrow.material-icons arrow_forward
     .login-box__no-account
         p Нет аккаунта на Toxin?
-        button.login-box__create-acc
-            p СОЗДАТЬ
+        +button('white', 'ВОЙТИ')
