@@ -1,12 +1,12 @@
+include ../../../../src/elements/button/button
+include ../../../../src/elements/text-field/text-field
+
 .login-box
     h1.login-box__title Войти
     form.login-box__login-form
-        input.login-box__email(placeholder='Email', type='email')
-        input.login-box__password(placeholder='Password', type='password')
-    button.login-box__sign-in
-        p ВОЙТИ
-        span.login-box__arrow.material-icons arrow_forward
+        +text-field('email', 'Email')
+        +text-field('password', 'Password')
+    +button('full', 'ВОЙТИ')
     .login-box__no-account
         p Нет аккаунта на Toxin?
-        button.login-box__create-acc
-            p СОЗДАТЬ
+        +button('white', 'Создать')
