@@ -6,9 +6,7 @@ include ../../../../src/elements/text-field/text-field
     form.login-box__login-form
         +text-field('email', 'Email')
         +text-field('password', 'Password')
-    button.login-box__sign-in
-        p ВОЙТИ
-        span.login-box__arrow.material-icons arrow_forward
+    +button('full', 'ВОЙТИ')
     .login-box__no-account
         p Нет аккаунта на Toxin?
-        +button('white', 'ВОЙТИ')
+        +button('white', 'Создать')
