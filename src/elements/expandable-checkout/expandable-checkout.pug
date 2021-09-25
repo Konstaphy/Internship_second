@@ -1,0 +1,7 @@
+include ../checkbox-element/checkbox-elem
+
+mixin checkout-expandable(title, elems)
+    .checkbox-container
+        p.checkbox-container-title= title
+        for elem in elems
+            +checkbox(elem.type, elem.title)

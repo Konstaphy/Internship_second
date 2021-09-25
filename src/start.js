@@ -4,13 +4,16 @@ import 'material-icons/iconfont/material-icons.css';
 
 //js
 // components
-import './elements/dropdown/dropdown'
-import './elements/button/button'
-import './elements/text-field/text-field'
-import './components/header/header'
-import './components/footer/footer'
-import './components/auth/login/login'
-import './components/auth/register/register'
+function requireAll(requireContext) {
+    return requireContext.keys().map(requireContext);
+}
+
+requireAll(require.context('./elements', true, /\.js$/));
+requireAll(require.context('./components', true, /\.js$/));
+requireAll(require.context('./elements', true, /\.scss$/));
+requireAll(require.context('./components', true, /\.scss$/));
+
+
 
 
 

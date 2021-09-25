@@ -1,5 +1,3 @@
-import './dropdown.scss'
-
 const button = document.getElementsByClassName('dropdown__title')[0]
 const menu = document.getElementsByClassName('dropdown__menu')[0]
 const box = document.getElementsByClassName('dropdown')[0]
