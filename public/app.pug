@@ -1,4 +1,4 @@
-//include ../src/elements/dropdown/dropdown
+include ../src/elements/expandable-checkout/expandable-checkout
 
 doctype html
 html
@@ -12,6 +12,6 @@ html
 
         include ../src/components/header/header
         .content
-            include ../src/components/auth/login/login
+            +checkout-expandable('Hello', [{type: 'def', title: 'hello'}, {type: 'non-def', title: 'bye'}])
         include ../src/components/footer/footer
 

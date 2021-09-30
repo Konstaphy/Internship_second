@@ -1,0 +1,15 @@
+.checkbox-item{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  margin: 5px 0;
+  input{
+    opacity: 0;
+    margin-right: 10px;
+  }
+  .checkbox-pointer{
+
+  }
+}
