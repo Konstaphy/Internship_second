@@ -2,23 +2,59 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  .checkmark{
+
+  .checkmark {
     width: 20px;
     height: 20px;
     margin: 5px 0;
     border-radius: 4px;
-    background:
-            linear-gradient(to bottom, #fff,#fff) padding-box,
-            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
-    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, #fff) padding-box,
+    linear-gradient(to bottom, var(--main-color-25), var(--main-color-25)) border-box;
+
+    border: 1px solid transparent;
+  }
+
+  &.checked .checkmark {
+
+    background: linear-gradient(to bottom, #fff, #fff) padding-box,
+    linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
 
   }
-  &.checked .checkmark{
-    background:
-            linear-gradient(to bottom, #000,#000) padding-box,
-            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+
+  .checkmark .check {
+    width: 6px;
+    height: 8px;
+    display: none;
+    transform: rotate(45deg);
+    position: relative;
+
+    .left-part {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 6px;
+      background: linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+    }
+
+    .right-part {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+    }
   }
-  p{
+
+  &.checked .checkmark .check {
+    display: flex;
+  }
+
+  p {
     margin: 0 10px;
   }
 }
