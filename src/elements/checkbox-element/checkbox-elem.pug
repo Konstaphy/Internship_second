@@ -1,4 +1,7 @@
-mixin checkbox(type, text)
-    label.checkbox-item(class=type)= text
-        input.checkbox-button(type="checkbox")
-        span.checkbox-pointer
+mixin checkbox(type, text, id)
+    .checkbox-elem-container(class=type id=id)
+        span.checkmark
+            .check
+                .left-part
+                .right-part
+        p=text

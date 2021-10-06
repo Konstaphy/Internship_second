@@ -7,11 +7,12 @@ html
         meta(name='description', content='Pug, webpack, scss file')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         meta(name='keywords', content='Hotels, Internship')
+        link(rel="icon" href="../favicon.ico" type="image/x-icon")
         title='Main page'
     body
 
         include ../src/components/header/header
         .content
-            +checkout-expandable('Hello', [{type: 'def', title: 'hello'}, {type: 'non-def', title: 'bye'}])
+            +checkout-expandable('Hello', [{type: 'def', title: 'hello', id: 'ce1'}, {type: 'non-def', title: 'bye', id: 'ce2'}])
         include ../src/components/footer/footer
 
