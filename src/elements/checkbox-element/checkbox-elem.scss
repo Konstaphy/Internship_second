@@ -1,15 +1,24 @@
-.checkbox-item{
+.checkbox-elem-container {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
-  font-size: 14px;
-  margin: 5px 0;
-  input{
-    opacity: 0;
-    margin-right: 10px;
-  }
-  .checkbox-pointer{
+  .checkmark{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background:
+            linear-gradient(to bottom, #fff,#fff) padding-box,
+            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+    border: 2px solid transparent;
 
+  }
+  &.checked .checkmark{
+    background:
+            linear-gradient(to bottom, #000,#000) padding-box,
+            linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+  }
+  p{
+    margin: 0 10px;
   }
 }
