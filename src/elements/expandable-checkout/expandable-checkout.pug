@@ -2,6 +2,8 @@ include ../checkbox-element/checkbox-elem
 
 mixin checkout-expandable(title, elems)
     .checkbox-container
-        h3.checkbox-container-title= title
+        h3.checkbox-container-title
+            p= title
+            span.material-icons expand_more
         for elem in elems
             +checkbox(elem.type, elem.title, elem.id)
