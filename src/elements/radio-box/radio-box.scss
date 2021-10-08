@@ -21,6 +21,26 @@
         background: linear-gradient(to bottom, #fff, #fff) padding-box,
                     linear-gradient(to bottom, var(--main-color-25), var(--main-color-25)) border-box;
       }
+      &.checked {
+        .radio-item__button{
+          position: relative;
+          background: linear-gradient(to bottom, #fff, #fff) padding-box,
+          linear-gradient(to bottom, #BC9CFF, #8BA4F9) border-box;
+        }
+        .radio-item__button::after{
+          position: absolute;
+          content: '';
+          height: 12px;
+          width: 12px;
+          border-radius: 100%;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: linear-gradient(to bottom, #BC9CFF, #8BA4F9) padding-box;
+          border: 3px solid transparent;
+        }
+      }
     }
   }
 }
