@@ -1,0 +1,26 @@
+.radio-box{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 16px;
+  .radio-box__title{
+    margin: 0 5px;
+  }
+  .radio-box__list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    .radio-item{
+      display: flex;
+      gap: 10px;
+      .radio-item__button{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        background: linear-gradient(to bottom, #fff, #fff) padding-box,
+                    linear-gradient(to bottom, var(--main-color-25), var(--main-color-25)) border-box;
+      }
+    }
+  }
+}
