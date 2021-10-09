@@ -1,0 +1,8 @@
+mixin radio-box(title, buttons)
+    .radio-box
+        p.radio-box__title=title
+        ul.radio-box__list
+            for elem in buttons
+                li.radio-item
+                    .radio-item__button
+                    .radio-item__title=elem

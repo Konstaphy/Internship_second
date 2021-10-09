@@ -1,0 +1,14 @@
+
+
+mixin comment(name, text, date, count)
+    .comment
+        .comment__top
+            img.comment__photo(src='../src/assets/avatar.jpg')
+            .comment__desc
+                h4.comment__name=name
+                p.comment__date=date
+        .comment__bottom
+            .comment__likes
+                p.material-icons favorite
+                p.comment__likes-counter= count
+            p.comment__text=text
