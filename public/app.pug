@@ -1,5 +1,6 @@
 //include ../src/elements/expandable-checkout/expandable-checkout
-include ../src/elements/radio-box/radio-box
+//include ../src/elements/radio-box/radio-box
+//include ../src/elements/comment/comment
 
 doctype html
 html
@@ -15,6 +16,7 @@ html
         include ../src/components/header/header
         .content
             //+checkout-expandable('Hello', [{type: 'def', title: 'hello', id: 'ce1'}, {type: 'non-def', title: 'bye', id: 'ce2'}])
-            +radio-box('Hello', ['radio1', 'radio2'])
+            //+radio-box('Hello', ['radio1', 'radio2'])
+            //+comment("Мурад Сарафонов", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.", "5 дней назад", "12")
         include ../src/components/footer/footer
 
